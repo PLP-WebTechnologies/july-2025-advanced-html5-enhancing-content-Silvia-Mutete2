@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Page with Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>My Hobbies & Interests</h1>
+    <p>Welcome! Here's my favorite activities, schedule, media, and a contact form.</p>
+  </header>
+
+  <section>
+    <h2>My Favorite Activities</h2>
+    <ul>
+      <li>Reading mystery novels</li>
+      <li>Cycling in the countryside</li>
+      <li>Cooking traditional recipes</li>
+    </ul>
+
+    <h2>Weekly Schedule</h2>
+    <table>
+      <thead>
+        <tr><th>Day</th><th>Activity</th><th>Time</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Monday</td><td>Reading</td><td>6:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>Cycling</td><td>7:00 AM</td></tr>
+        <tr><td>Saturday</td><td>Cooking</td><td>4:00 PM</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Section</h2>
+    <figure>
+      <!-- Your image embedded from Pexels -->
+      <img src="https://images.pexels.com/photos/19132482/pexels-photo-19132482.jpeg" alt="Person holding smartphone on stabilizer taking a picture" width="400">
+      <figcaption>Person holding a smartphone on a stabilizer, capturing a scenic view.</figcaption>
+    </figure>
+
+    <!-- Embedded YouTube video -->
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/d8Mqjs7uGnY"
+      title="iMali (Official Audio)"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="activity">Favorite Activity:</label>
+        <select id="activity" name="activity" required>
+          <option value="">--Please choose--</option>
+          <option value="reading">Reading</option>
+          <option value="cycling">Cycling</option>
+          <option value="cooking">Cooking</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{5,15}" title="5-15 letters, numbers, or underscores">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Silvia.</p>
+  </footer>
+  
+</body>
+</html>
